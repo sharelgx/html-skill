@@ -1,8 +1,8 @@
 # HTML Effectiveness Skill
 
-A compact Codex/Cursor skill for creating interactive single-file HTML artifacts when Markdown would make information too flat, long, or hard to compare.
+A compact Codex/Cursor skill for creating interactive single-file HTML artifacts in the Claude paper visual style when Markdown would make information too flat, long, or hard to compare.
 
-This skill is inspired by the idea behind [`thariqs/html-effectiveness`](https://github.com/ThariqS/html-effectiveness), but it does not vendor or depend on that repository's 20 HTML demos. It extracts the reusable workflow: choose HTML when comparison, filtering, diagrams, reports, prototypes, or small editing surfaces make the answer more useful.
+This skill is inspired by the idea and visual language behind [`thariqs/html-effectiveness`](https://github.com/ThariqS/html-effectiveness), but it does not vendor or depend on that repository's 20 HTML demos. It extracts the reusable workflow and default look: choose HTML when comparison, filtering, diagrams, reports, prototypes, or small editing surfaces make the answer more useful, and present it with warm paper backgrounds, editorial serif headings, clay/olive accents, fine borders, and restrained interactive controls.
 
 ## What It Helps With
 
@@ -48,7 +48,7 @@ The skill guides the agent to:
 - Decide when HTML is worth using.
 - Pick a dominant pattern such as comparison explorer, code-review board, flow explainer, triage board, or prompt tuner.
 - Build a self-contained `.html` file with inline CSS and JavaScript.
-- Avoid generic AI-document styling unless requested.
+- Use the Claude paper visual system by default while keeping controls genuinely interactive.
 - Validate that the artifact opens locally and preserves the user's source data.
 
 ## Repository Contents
@@ -66,4 +66,4 @@ The skill guides the agent to:
 
 ## Design Principle
 
-Use HTML when the answer should become an inspectable object, not just prose. The artifact should make complex information easier to browse, compare, filter, explain, or act on.
+Use HTML when the answer should become an inspectable object, not just prose. The artifact should make complex information easier to browse, compare, filter, explain, or act on. The default style is Claude paper: warm, editorial, calm, and interactive.

@@ -2,6 +2,8 @@
 
 Use this file only when choosing a structure for an HTML artifact. Select one dominant pattern instead of mixing everything.
 
+Default every pattern to the Claude paper visual system unless the user asks otherwise: warm ivory background, white/warm paper panels, serif editorial headings, clay/rust primary accents, olive/sage secondary accents, fine borders, subtle shadows, and system sans controls. The page can still be highly interactive; the paper style is the skin, not a limit on behavior.
+
 ## Comparison Explorer
 
 Use for technical approaches, vendors, designs, papers, or product options. Include side-by-side columns, tradeoff tags, risk levels, and a final recommendation lane.

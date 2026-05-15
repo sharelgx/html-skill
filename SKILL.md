@@ -9,7 +9,7 @@ description: Create compact, interactive, single-file HTML artifacts instead of 
 
 Turn dense written work into a useful single-file HTML artifact when Markdown would make the answer long, flat, or hard to compare. The artifact should behave like a small product surface: readable, inspectable, interactive where interaction helps, and self-contained enough to open locally without a build step.
 
-Do not copy the `thariqs/html-effectiveness` sample pages into outputs. Treat that repository as inspiration only: extract the pattern, then adapt to the user's domain, language, data, and taste.
+Use the `thariqs/html-effectiveness` visual language as the default: a Claude paper-style interface with warm paper backgrounds, serif editorial headings, clay/orange and olive accents, fine borders, restrained shadows, generous but controlled whitespace, and clear interactive controls. Do not copy the sample pages verbatim; extract the pattern and visual grammar, then adapt it to the user's domain, language, data, and taste.
 
 ## Decision Rule
 
@@ -38,6 +38,7 @@ Make the first screen useful immediately. The user should see the object of work
 
 Prefer:
 
+- Claude paper styling by default: warm ivory/paper background, white panels, clay or rust primary accents, olive/green secondary accents, fine gray dividers, subtle shadows, and editorial serif headings paired with system sans body text.
 - Clear information hierarchy and dense-but-readable layouts.
 - Real data, filenames, entities, dates, and source labels when available.
 - Tables, timelines, comparison grids, boards, diagrams, side-by-side panes, and compact controls.
@@ -47,22 +48,30 @@ Prefer:
 Avoid:
 
 - A generic landing page for an artifact that should be a tool or report.
-- Claude-style defaults unless requested: warm ivory paper, Georgia display titles, clay/orange accents, oversized cards, and decorative document-page composition.
+- Copying `thariqs/html-effectiveness` HTML source, fictional Acme/Birchline content, or exact demo layouts when the user's task needs its own structure.
+- Letting the paper style become decoration only; controls still need to be useful, visible, and stateful.
 - One-note palettes, gratuitous gradients, ornamental blobs, or explanation text that describes how to use obvious controls.
 - UI cards nested inside other cards.
 - Interactions that do not affect the user's understanding or workflow.
 
 ## Visual Direction
 
-Pick a visual language from the task:
+Start from the Claude paper visual system unless the user requests another style:
 
-- Product/admin work: quiet, dense, utilitarian, scan-friendly.
-- Personal analytics: warm but data-first, with readable charts and preservation of raw records.
-- Engineering review: diff-aware, risk-first, with code/file references and action states.
-- Product prototype: realistic app surface with controls and states, not a poster.
+- Background: `#FAF9F5`, `#F7F4EC`, or similar warm paper; panels can use white or slightly warmer paper.
+- Text: near-black slate for main text; muted warm gray for secondary text.
+- Accents: clay/rust/orange for primary emphasis; olive/sage for secondary status; use blue sparingly for links or technical focus.
+- Typography: serif display headings such as Georgia or ui-serif; system sans for body and controls; monospace for paths, code, and exports.
+- Shape: 8-10px panel radius, fine 1-1.5px borders, light shadows, no glossy gradients.
+- Composition: editorial document clarity plus real app controls; not a marketing hero and not a dark developer console unless explicitly requested.
+
+Adapt within that visual system:
+
+- Product/admin work: denser tables and controls, but keep the paper palette and serif section rhythm.
+- Personal analytics: warm data-first dashboard, with readable charts and preservation of raw records.
+- Engineering review: diff-aware and risk-first, but presented as a paper review packet with compact controls.
+- Product prototype: realistic app surface, with paper-style framing only around supporting analysis.
 - Teaching or research explainer: progressive disclosure, diagrams, examples, and short checks for understanding.
-
-If the user criticizes "AI/Claude style", deliberately change typography, spacing, palette, border radius, and composition before final delivery.
 
 ## Implementation Rules
 
