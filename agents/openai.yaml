@@ -1,0 +1,4 @@
+interface:
+  display_name: "HTML Effectiveness"
+  short_description: "Interactive single-file HTML artifacts"
+  default_prompt: "Create a self-contained interactive HTML artifact for this task. Choose the right pattern, avoid generic AI-document styling, and validate the file locally."
